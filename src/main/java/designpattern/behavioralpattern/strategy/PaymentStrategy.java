@@ -1,4 +1,4 @@
-package designpattern.structuralpattern.strategy;
+package designpattern.behavioralpattern.strategy;
 
 import java.math.BigDecimal;
 
