@@ -1,6 +1,6 @@
 package datastructure.tree;
 
-public class TreeParentNodeTest {
+public class ParentNodeRepresentationTest {
     public static void main(String[] args) {
 //        System.out.println(Character.toString((char)65));
 //        TreeParentNode<String>[] arr = new TreeParentNode[10];
@@ -9,7 +9,7 @@ public class TreeParentNodeTest {
 //            TreeParentNode<String> node = new TreeParentNode<>();
 //        }
 
-        TreeParentRepresentation<String> treeParentRepresentation = new TreeParentRepresentation<String>(10, "A");
-        System.out.println(treeParentRepresentation.arr[0]);
+//        ParentNodeRepresentation parentNodeRepresentation = new ParentNodeRepresentation(10, "A");
+//        System.out.println(parentNodeRepresentation.arr[0]);
     }
 }
