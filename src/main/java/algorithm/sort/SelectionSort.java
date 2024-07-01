@@ -1,4 +1,4 @@
-package algorithm.sort.selectionsort;
+package algorithm.sort;
 
 /**
  * Selection Sort
