@@ -1,23 +1,22 @@
 package designpattern.creationalpattern.singleton;
 
+/**
+ * 单例模式 --- 饿汉式
+ */
 public class Singleton {
 
-    // 引用唯一实例
-    private static final Singleton instance = new Singleton();
+    // 静态成员变量，存储类的唯一实例
+    private static final Singleton INSTANCE = new Singleton();
 
-    // 防止外部实例化
+    // 私有构造方法，防止外部对其实例化
     private Singleton() {}
 
-    // 获取实例
-    public static Singleton getInstance() {
-        return instance;
+    public void print() {
+        System.out.println("饿汉式实现单例模式");
     }
 
-    @Override
-    public String toString() {
-        String name = "单例";
-        return "Singleton{" +
-                "name='" + name + '\'' +
-                '}';
+    // 公共静态方法，提供外部访问实例的入口
+    public static Singleton getInstance() {
+        return Singleton.INSTANCE;
     }
 }

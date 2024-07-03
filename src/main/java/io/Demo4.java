@@ -9,6 +9,5 @@ public class Demo4 {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        BufferedWriter
     }
 }
