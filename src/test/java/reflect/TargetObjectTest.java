@@ -1,9 +1,9 @@
 package reflect;
 
+import basics.reflect.TargetObject;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class TargetObjectTest {
@@ -16,14 +16,14 @@ public class TargetObjectTest {
         Class targetObjectClass = TargetObject.class;
 
         // 2. 传入类的全路径
-        Class targetObjectClass2 = Class.forName("reflect.TargetObject");
+        Class targetObjectClass2 = Class.forName("basics.reflect.TargetObject");
 
         // 3. 通过对象的实例获取
         TargetObject to = new TargetObject();
         Class targetObjectClass3 = to.getClass();
 
         // 4. 通过类加载器传入类路径获取
-        Class targetObjectClass4 = ClassLoader.getSystemClassLoader().loadClass("reflect.TargetObject");
+        Class targetObjectClass4 = ClassLoader.getSystemClassLoader().loadClass("basics.reflect.TargetObject");
 
         System.out.println(targetObjectClass);
         System.out.println(targetObjectClass2);
@@ -39,7 +39,7 @@ public class TargetObjectTest {
     @Test
     public void test2() throws Exception {
         // 获取TargetObject类的Class对象并创建实例
-        Class<?> targetClass = Class.forName("reflect.TargetObject");
+        Class<?> targetClass = Class.forName("basics.reflect.TargetObject");
         TargetObject targetObject = (TargetObject) targetClass.newInstance();
 
         // 获取TragetObject类中定义的所有方法

@@ -1,6 +1,6 @@
-package reflect;
+package basics.reflect;
 
-public class TargetObject {
+public class    TargetObject {
     private String value;
 
     public TargetObject() {}
