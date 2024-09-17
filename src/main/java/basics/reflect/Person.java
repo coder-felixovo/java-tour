@@ -1,9 +1,10 @@
 package basics.reflect;
 
 public class Person {
-    private String name;
-    private int age;
+    public String name;
+    protected int age;
     private boolean isVip;
+    char sex;
 
     public Person() {
         System.out.println("Person类，public无参构造方法");
@@ -26,6 +27,26 @@ public class Person {
 
     private Person(int age) {
         System.out.println("Person类，private构造方法，接收参数：age");
+    }
+
+    public static void output1() {
+        System.out.println("调用了public static void output1()方法");
+    }
+
+    public void print1() {
+        System.out.println("调用了public void print1()方法");
+    }
+
+    protected void print2() {
+        System.out.println("调用了protected void print2()方法");
+    }
+
+    void print3() {
+        System.out.println("调用了void print3()方法");
+    }
+
+    private void print4() {
+        System.out.println("调用了private void print4()方法");
     }
 
     public String getName() {
